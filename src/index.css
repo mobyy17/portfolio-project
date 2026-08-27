@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0a0908;
+  --bg2: #131210;
+  --card: #181613;
+  --line: #2b2823;
+  --ink: #e9e4d8;
+  --ink-dim: #8f897b;
+  --red: #c22a2a;
+  --red-dim: #7a1c1c;
+  --gold: #d9af52;
+  --gold-dim: #8a6f2f;
+}
+
+html.light {
+  --bg: #efe9db;
+  --bg2: #e5ded0;
+  --card: #f6f2e8;
+  --line: #cfc6b0;
+  --ink: #1a1712;
+  --ink-dim: #6b6353;
+  --red: #a81f1f;
+  --red-dim: #7a1414;
+  --gold: #a3781f;
+  --gold-dim: #7a5c18;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  transition: background 0.3s, color 0.3s;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.grain::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.outline-text {
+  -webkit-text-stroke: 1.5px var(--ink);
+  color: transparent;
+}
+
+.hero-grid-bg {
+  background-image: linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: linear-gradient(to bottom, transparent, black 20%, black 70%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 20%, black 70%, transparent);
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee-track {
+  animation: marquee 22s linear infinite;
+}
+
+.bar-fill {
+  background: linear-gradient(90deg, var(--red), var(--gold));
+}
+
+.id-photo-bg {
+  background: linear-gradient(135deg, var(--red-dim), var(--gold-dim));
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 700ms ease, transform 700ms cubic-bezier(0.2, 0.75, 0.25, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+.nav-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 1px;
+  background: var(--red);
+  transition: width 0.2s;
+}
+.nav-underline:hover::after {
+  width: 100%;
+}
