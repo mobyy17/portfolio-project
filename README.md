@@ -18,25 +18,25 @@ npm run build
 npm run preview
 ```
 
-## Struktur project
-public/
-images/
-fotojamal.jpeg 
-src/
-App.jsx # Merangkai semua section
-data.js # SEMUA konten (profil, activities, achievements, skill) — edit di sini
-index.css # Warna tema (light/dark) & animasi custom
-components/
-Header.jsx # Navbar + toggle theme
-Hero.jsx # Section utama, pakai foto full-bleed
-Reveal.jsx # Wrapper animasi fade-in scroll
-Shared.jsx # Marquee & SectionLabel reusable
-Profile.jsx # Section about/profile
-Experience.jsx # Timeline leadership & activities + achievements
-Skills.jsx # Progress bar skill
-Contact.jsx # Form kontak
-Footer.jsx
-ThemeToggle.jsx
+### Struktur Project
+
+*   **`public/images/`**
+    *   `fotojamal.jpeg`
+*   **`src/`**
+    *   `App.jsx` - Merangkai semua section
+    *   `data.js` - SEMUA konten (profil, activities, achievements, skill) — edit di sini
+    *   `index.css` - Warna tema (light/dark) & animasi custom
+    *   **`components/`**
+        *   `Header.jsx` - Navbar + toggle theme
+        *   `Hero.jsx` - Section utama, pakai foto full-bleed
+        *   `Reveal.jsx` - Wrapper animasi fade-in scroll
+        *   `Shared.jsx` - Marquee & SectionLabel reusable
+        *   `Profile.jsx` - Section about/profile
+        *   `Experience.jsx` - Timeline leadership & activities + achievements
+        *   `Skills.jsx` - Progress bar skill
+        *   `Contact.jsx` - Form kontak
+        *   `Footer.jsx`
+        *   `ThemeToggle.jsx`
 
 
 ## Cara ganti konten
