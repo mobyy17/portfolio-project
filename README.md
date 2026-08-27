@@ -1,6 +1,6 @@
-# Kenta Portfolio — React + Tailwind
+# Rafiif Portfolio — React + Tailwind
 
-Website portfolio CV bertema street Tokyo (dark/light mode) untuk developer.
+Website portfolio CV bertema street Tokyo/ITB (dark/light mode) untuk Muhammad Rafiif Ansyadya.
 
 ## Cara menjalankan
 
@@ -19,33 +19,39 @@ npm run preview
 ```
 
 ## Struktur project
-
-```
+public/
+images/
+fotojamal.jpeg 
 src/
-  App.jsx              # Merangkai semua section
-  data.js              # SEMUA konten (nama, experience, project, skill) — edit di sini
-  index.css            # Warna tema (light/dark) & animasi custom
-  components/
-    Header.jsx          # Navbar + toggle theme
-    Hero.jsx             # Section utama
-    Shared.jsx           # Marquee & SectionLabel reusable
-    Profile.jsx          # Section about/profile
-    Experience.jsx       # Timeline experience + projects
-    Skills.jsx           # Progress bar skill
-    Contact.jsx          # Form kontak
-    Footer.jsx
-    ThemeToggle.jsx
-```
+App.jsx # Merangkai semua section
+data.js # SEMUA konten (profil, activities, achievements, skill) — edit di sini
+index.css # Warna tema (light/dark) & animasi custom
+components/
+Header.jsx # Navbar + toggle theme
+Hero.jsx # Section utama, pakai foto full-bleed
+Reveal.jsx # Wrapper animasi fade-in scroll
+Shared.jsx # Marquee & SectionLabel reusable
+Profile.jsx # Section about/profile
+Experience.jsx # Timeline leadership & activities + achievements
+Skills.jsx # Progress bar skill
+Contact.jsx # Form kontak
+Footer.jsx
+ThemeToggle.jsx
+
 
 ## Cara ganti konten
 
 Buka `src/data.js` dan ganti:
-- `profile` → nama, role, email, dll
-- `EXPERIENCE` → riwayat kerja
-- `PROJECTS` → project unggulan
+- `profile` → nama, role, email, no HP, dll
+- `EXPERIENCE` → riwayat organisasi/leadership/activities
+- `PROJECTS` → achievement & pendidikan
 - `SKILLS` → tech stack & level
 - `STATS` → angka statistik di section Profile
 - `SOCIALS` → link GitHub/LinkedIn/Instagram
+
+## Cara ganti foto hero
+
+Ganti file di `public/images/rafiif-hero.jpg` dengan foto lain (nama file harus sama, atau ubah juga path `src` di `Hero.jsx`).
 
 ## Cara ganti warna
 
