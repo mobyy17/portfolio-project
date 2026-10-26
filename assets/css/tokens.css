@@ -1,0 +1,93 @@
+/* ==========================================================
+   TOKENS — tema "Bizarre's"
+   Satu-satunya tempat warna, font, radius, & easing.
+   Palet ungu-plum + aksen emas, terinspirasi JoJo's Bizarre Adventure
+   secara samar. Komponen hanya memakai var().
+   ========================================================== */
+:root {
+  --font: "Inter Tight", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, "Cascadia Code", Consolas, monospace;
+  --font-jp: "Hiragino Kaku Gothic Pro", "Yu Gothic", "Meiryo", "Noto Sans JP", sans-serif;
+
+  --radius-lg: 24px;
+  --radius: 16px;
+  --radius-sm: 10px;
+
+  --ease-out: cubic-bezier(.16, 1, .3, 1);
+  --ease-in: cubic-bezier(.55, 0, .75, .2);
+  --ease-spring: cubic-bezier(.2, .9, .3, 1.25);
+
+  /* aksen dikendalikan dock (interpolasi antar halaman) */
+  --acc: #c9f24a;
+  --on-acc: #16121c;
+  /* emas "Bizarre's": dipakai tipis untuk ornamen (aura, To Be Continued) */
+  --gold: #f5c542;
+}
+
+/* ---------- DARK (default) ---------- */
+:root,
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0f0c16;
+  --bg-hero: radial-gradient(120% 70% at 50% 0%, #2c2045 0%, #1a1526 45%, #0f0c16 100%);
+  --surface: #17131f;
+  --surface-2: #1f1a2a;
+  --surface-glass: rgba(23, 19, 31, .86);
+  --line: rgba(255, 255, 255, .08);
+  --line-strong: rgba(255, 255, 255, .16);
+  --ink: #f1eef7;
+  --ink-soft: #cfc9da;
+  --muted: #9d96ab;
+  --acc-ink: var(--acc);
+  --gold-ink: var(--gold);
+  --shadow: 0 24px 60px rgba(0, 0, 0, .45);
+  --shadow-sm: 0 10px 24px rgba(0, 0, 0, .3);
+  --noise-opacity: .05;
+  --menacing-opacity: .14;
+
+  /* dock */
+  --dock-plate-top: #1d1828;
+  --dock-plate-bottom: #120f19;
+  --dock-rim-a: rgba(255, 255, 255, .42);
+  --dock-rim-b: rgba(255, 255, 255, .10);
+  --dock-rim-c: rgba(255, 255, 255, .04);
+  --dock-icon: #a59fb2;
+  --dock-icon-hover: #e2ddeb;
+  --dock-sub: #b8b1c6;
+  --dock-shadow: rgba(0, 0, 0, .45);
+  --dock-label-acc: 100%;
+}
+
+/* ---------- LIGHT ---------- */
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f6f4fa;
+  --bg-hero: radial-gradient(120% 70% at 50% 0%, #ffffff 0%, #f0ecf7 55%, #f6f4fa 100%);
+  --surface: #ffffff;
+  --surface-2: #f1eef7;
+  --surface-glass: rgba(255, 255, 255, .88);
+  --line: rgba(22, 18, 28, .08);
+  --line-strong: rgba(22, 18, 28, .16);
+  --ink: #16121c;
+  --ink-soft: #3b3448;
+  --muted: #5f5870;
+  /* aksen terang (lime, teal) digelapkan agar terbaca di latar putih */
+  --acc-ink: color-mix(in srgb, var(--acc) 40%, #16121c);
+  --gold-ink: #6e5205;
+  --shadow: 0 24px 60px rgba(40, 28, 70, .12);
+  --shadow-sm: 0 10px 24px rgba(40, 28, 70, .08);
+  --noise-opacity: .03;
+  --menacing-opacity: .10;
+
+  /* dock versi terang */
+  --dock-plate-top: #ffffff;
+  --dock-plate-bottom: #f2eef8;
+  --dock-rim-a: rgba(22, 18, 28, .18);
+  --dock-rim-b: rgba(22, 18, 28, .10);
+  --dock-rim-c: rgba(22, 18, 28, .08);
+  --dock-icon: #6b6480;
+  --dock-icon-hover: #16121c;
+  --dock-sub: #5f5870;
+  --dock-shadow: rgba(40, 28, 70, .18);
+  --dock-label-acc: 45%;
+}
