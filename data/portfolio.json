@@ -1,0 +1,437 @@
+{
+  "site": {
+    "nama": "Rafiif's Portfolio",
+    "deskripsi": "portofolio bosku"
+  },
+  "profil": {
+    "nama": "Muhammad Rafiif Ansyadya",
+    "jabatan": "Second Year Informatics Engineering Student @Institut Teknologi Bandung",
+    "ipk": "3.69",
+    "universitas": "Institut Teknologi Bandung",
+    "prodi": "Teknik Informatika",
+    "prodi_en": "Informatics Engineering",
+    "fakultas": "Sekolah Teknik Elektro dan Informatika (STEI-K)",
+    "fakultas_en": "School of Electrical Engineering and Informatics (STEI-K)",
+    "angkatan": "25",
+    "tahun_masuk": "2025",
+    "lokasi": "Bandung / Bekasi, Indonesia",
+    "foto": [
+      "assets/images/profil/rafiif-square.webp",
+      "assets/images/profil/jahimmm.webp",
+      "assets/images/profil/jakang.webp",
+      "assets/images/profil/almet-part-2.webp",
+      "assets/images/profil/seravia.webp"
+    ],
+    "bio": "Halo! Saya Muhammad Rafiif Ansyadya, mahasiswa Teknik Informatika di Institut Teknologi Bandung (ITB) angkatan 2025. Saya memiliki ketertarikan mendalam pada AI Engineering, Machine Learning, dan Full-Stack Development, dengan dasar yang kuat di bidang matematika analitis dan penyelesaian masalah algoritmik. Terbuka untuk peluang kolaborasi proyek, magang, dan inovasi teknologi.",
+    "bio_en": "Hi! I'm Muhammad Rafiif Ansyadya, an Informatics Engineering student at Institut Teknologi Bandung (ITB), class of 2025. I'm deeply interested in AI Engineering, Machine Learning, and Full-Stack Development, backed by a strong foundation in analytical mathematics and algorithmic problem solving. Open to project collaborations, internships, and tech innovation.",
+    "email": "muhammadrafiifansyadya@gmail.com",
+    "minat": [
+      "AI Engineering",
+      "Machine Learning",
+      "Full-Stack Development",
+      "Algoritma & Matematika"
+    ],
+    "minat_en": [
+      "AI Engineering",
+      "Machine Learning",
+      "Full-Stack Development",
+      "Algorithms & Mathematics"
+    ]
+  },
+  "kontak": [
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/mobyy17",
+      "label": "github.com/mobyy17",
+      "icon": "github"
+    },
+    {
+      "platform": "Gmail",
+      "url": "mailto:muhammadrafiifansyadya@gmail.com",
+      "label": "muhammadrafiifansyadya@gmail.com",
+      "icon": "gmail"
+    },
+    {
+      "platform": "Instagram",
+      "url": "https://instagram.com/rafiif_sydya",
+      "label": "rafiif_sydya",
+      "icon": "instagram"
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://linkedin.com/in/muhammad-rafiif-ansyadya-6b3006373",
+      "label": "in/muhammad-rafiif-ansyadya",
+      "icon": "linkedin"
+    }
+  ],
+  "pendidikan": [
+    {
+      "institusi": "Institut Teknologi Bandung",
+      "gelar": "S1 Teknik Informatika (Bachelor of Engineering in Informatics)",
+      "gelar_en": "Bachelor of Engineering in Informatics",
+      "periode": "2025 – Sekarang",
+      "periode_en": "2025 – Present",
+      "lokasi": "Bandung, Indonesia",
+      "ipk": "3.69 / 4.00",
+      "deskripsi": "Fokus mendalami AI Engineering, Machine Learning, Desain Algoritma, dan Full-Stack Software Development.",
+      "deskripsi_en": "Focused on AI Engineering, Machine Learning, Algorithm Design, and Full-Stack Software Development.",
+      "logo": "assets/images/organisasi/itb.webp"
+    },
+    {
+      "institusi": "SMA Islam PB. Soedirman 1 Kota Bekasi",
+      "gelar": "Kurikulum Merdeka",
+      "gelar_en": "Merdeka Curriculum",
+      "periode": "2022 – 2025",
+      "lokasi": "Bekasi, Indonesia",
+      "ipk": "Top 5 Class of '25",
+      "prestasi": [
+        "Honorable Mention of Komodo Math Competition Dragon Level (2024)",
+        "Honorable Mention of Komodo Math Competition Iguana Level (2023)",
+        "Juara 1 OLIMPIADE PRESTASI USU Bidang Matematika Tingkat Nasional (2024)",
+        "2x Finalis Eduversal Mathematics Competition (2023 & 2024)",
+        "Peserta Olimpiade Sains Nasional (OSN) Matematika Tingkat Kota Bekasi (2023 & 2024)"
+      ],
+      "prestasi_en": [
+        "Honorable Mention of Komodo Math Competition Dragon Level (2024)",
+        "Honorable Mention of Komodo Math Competition Iguana Level (2023)",
+        "1st Place, USU Achievement Olympiad — Mathematics, National Level (2024)",
+        "2x Finalist, Eduversal Mathematics Competition (2023 & 2024)",
+        "Participant, National Science Olympiad (OSN) Mathematics — Bekasi City Level (2023 & 2024)"
+      ],
+      "logo": "assets/images/organisasi/soedirman.webp"
+    }
+  ],
+  "organisasi": {
+    "kuliah": [
+      {
+        "nama": "Himpunan Mahasiswa Informatika (HMIF) ITB",
+        "posisi": "Academic Staff Intern",
+        "periode": "Sep 2026 – Sekarang",
+        "periode_en": "Sep 2026 – Present",
+        "durasi": "2 bln",
+        "durasi_en": "2 mos",
+        "tipe": "Magang",
+        "tipe_en": "Internship",
+        "lokasi": "Bandung, Indonesia",
+        "icon": "hmif",
+        "logo": "assets/images/organisasi/hmif.webp",
+        "deskripsi": "Berperan dalam divisi akademik HMIF ITB untuk memfasilitasi pendampingan akademik mahasiswa informatika, penyusunan bank soal & arsip materi kurikulum, serta penyelenggaraan program akademik himpunan.",
+        "deskripsi_en": "Part of the HMIF ITB academic division: facilitating academic mentoring for informatics students, compiling question banks and course material archives, and running the association's academic programs."
+      },
+      {
+        "nama": "ARKAVIDIA",
+        "posisi": "Arkalogica Staff",
+        "periode": "Sep 2026 – Sekarang",
+        "periode_en": "Sep 2026 – Present",
+        "durasi": "2 bln",
+        "durasi_en": "2 mos",
+        "tipe": "Kepanitiaan",
+        "tipe_en": "Committee",
+        "lokasi": "Bandung, Indonesia",
+        "icon": "arkavidia",
+        "logo": "assets/images/organisasi/arkavidia.webp",
+        "deskripsi": "Staff divisi Arkalogica pada Arkavidia ITB (Informatics Festival), merancang soal dan skema kompetisi computational logic & algorithmic problem solving tingkat nasional serta mengelola operasional teknis perlombaan.",
+        "deskripsi_en": "Arkalogica division staff at Arkavidia ITB (Informatics Festival), designing problems and formats for a national computational logic & algorithmic problem-solving competition and managing its technical operations."
+      },
+      {
+        "nama": "Institut Teknologi Bandung",
+        "posisi": "Computational Thinking Practicum Assistant",
+        "periode": "Sep 2026 – Sekarang",
+        "periode_en": "Sep 2026 – Present",
+        "durasi": "2 bln",
+        "durasi_en": "2 mos",
+        "tipe": "Asisten Praktikum",
+        "tipe_en": "Practicum Assistant",
+        "lokasi": "Bandung, Indonesia",
+        "icon": "itb",
+        "logo": "assets/images/organisasi/itb.webp",
+        "deskripsi": "Asisten praktikum mata kuliah Berpikir Komputasional (Computational Thinking) di ITB, mendampingi mahasiswa dalam penguasaan logika komputasional, algoritma dasar, dan pemecahan masalah analitis.",
+        "deskripsi_en": "Practicum assistant for the Computational Thinking course at ITB, guiding students in computational logic, basic algorithms, and analytical problem solving."
+      },
+      {
+        "nama": "Google Developer Groups on Campus ITB",
+        "posisi": "Artificial Intelligence Explorer",
+        "periode": "Mei 2026 – Sekarang",
+        "periode_en": "May 2026 – Present",
+        "durasi": "6 bln",
+        "durasi_en": "6 mos",
+        "tipe": "Purnawaktu · Jarak jauh",
+        "tipe_en": "Full-time · Remote",
+        "lokasi": "Bandung, Jawa Barat, Indonesia · Jarak jauh",
+        "lokasi_en": "Bandung, West Java, Indonesia · Remote",
+        "icon": "gdg",
+        "logo": "assets/images/organisasi/gdg.webp",
+        "deskripsi": "Mendalami teknologi kecerdasan buatan (Artificial Intelligence) dan machine learning, eksplorasi implementasi model AI terkini, serta aktif dalam kegiatan dan lokakarya komunitas developer Google ITB.",
+        "deskripsi_en": "Exploring artificial intelligence and machine learning, experimenting with state-of-the-art AI models, and taking part in Google developer community events and workshops at ITB."
+      },
+      {
+        "nama": "OSKM ITB 2026",
+        "posisi": "Mentor",
+        "periode": "Agt 2026",
+        "periode_en": "Aug 2026",
+        "durasi": "1 bln",
+        "durasi_en": "1 mo",
+        "tipe": "Kepanitiaan",
+        "tipe_en": "Committee",
+        "lokasi": "Bandung, Indonesia",
+        "icon": "oskm",
+        "logo": "assets/images/organisasi/oskm.webp",
+        "deskripsi": "Bertindak sebagai mentor dalam Orientasi Studi Keluarga Mahasiswa (OSKM) ITB 2026, membimbing dan mendampingi mahasiswa baru dalam proses adaptasi kehidupan kemahasiswaan, budaya kampus, dan nilai integritas di ITB.",
+        "deskripsi_en": "Mentor at ITB's 2026 student orientation (OSKM), guiding new students as they adapt to student life, campus culture, and ITB's values of integrity."
+      },
+      {
+        "nama": "Sekolah Teknik Elektro dan Informatika - Komputasi (STEI-K) ITB 2025",
+        "posisi": "Treasurer & Creative Event Staff",
+        "periode": "Nov 2025 – Jul 2026",
+        "durasi": "9 bln",
+        "durasi_en": "9 mos",
+        "lokasi": "Bandung, Indonesia",
+        "icon": "stei",
+        "logo": "assets/images/organisasi/stei.webp",
+        "roles": [
+          {
+            "posisi": "Treasurer at \"STEI - Konverge\"",
+            "tipe": "Musiman",
+            "tipe_en": "Seasonal",
+            "periode": "Mar 2026 – Jul 2026",
+            "durasi": "5 bln",
+            "durasi_en": "5 mos",
+            "deskripsi": "Mengelola perencanaan anggaran keuangan, pencatatan arus kas operasional pemasukan dan pengeluaran, serta penyusunan laporan pertanggungjawaban (LPJ) keuangan kepanitiaan STEI - Konverge.",
+            "deskripsi_en": "Managed budget planning, recorded operational cash flow (income and expenses), and prepared the financial accountability report for the STEI - Konverge committee."
+          },
+          {
+            "posisi": "Creative Event Staff",
+            "tipe": "Paruh Waktu",
+            "tipe_en": "Part-time",
+            "periode": "Nov 2025 – Jul 2026",
+            "durasi": "9 bln",
+            "durasi_en": "9 mos",
+            "deskripsi": "Merancang konsep kreatif, alur acara, dan teknis eksekusi program kebersamaan pada kepanitiaan angkatan STEI-K ITB 2025.",
+            "deskripsi_en": "Designed creative concepts, event flow, and execution for the STEI-K ITB 2025 cohort's bonding programs."
+          }
+        ]
+      },
+      {
+        "nama": "OGG FITB ITB 2026",
+        "posisi": "IT Staff",
+        "periode": "Des 2025 – Jul 2026",
+        "periode_en": "Dec 2025 – Jul 2026",
+        "durasi": "8 bln",
+        "durasi_en": "8 mos",
+        "tipe": "Kepanitiaan",
+        "tipe_en": "Committee",
+        "lokasi": "Bandung, Indonesia",
+        "icon": "ogg",
+        "logo": "assets/images/organisasi/ogg.webp",
+        "deskripsi": "Mengelola infrastruktur teknologi informasi, sistem registrasi daring, pemeliharaan sistem web, dan dukungan operasional teknis pada ajang Olimpiade Geografi dan Geosains (OGG) FITB ITB 2026.",
+        "deskripsi_en": "Managed IT infrastructure, the online registration system, web maintenance, and technical operations for the FITB ITB 2026 Geography and Geoscience Olympiad (OGG)."
+      }
+    ],
+    "sma": [
+      {
+        "nama": "National Science Olympiad (OSN) Mathematics Team",
+        "posisi": "Member",
+        "periode": "2022 – 2024",
+        "lokasi": "Bekasi, Indonesia",
+        "icon": "osn",
+        "logo": "assets/images/organisasi/soedirman.webp",
+        "deskripsi": "Mengikuti pelatihan intensif matematika untuk mengasah pemecahan masalah kompleks dan logika analitis.",
+        "deskripsi_en": "Intensive mathematics training to sharpen complex problem solving and analytical reasoning."
+      },
+      {
+        "nama": "SPECTASOED 7.0",
+        "posisi": "Member of Security Sector",
+        "periode": "2023",
+        "lokasi": "Bekasi, Indonesia",
+        "icon": "spectasoed",
+        "logo": "assets/images/organisasi/soedirman.webp",
+        "deskripsi": "Menjaga protokol keamanan dan kelancaran crowd control pada pagelaran acara besar tahunan sekolah.",
+        "deskripsi_en": "Handled security protocols and crowd control for the school's large annual event."
+      },
+      {
+        "nama": "Badminton Club SMAI PB Soedirman 1",
+        "posisi": "Member",
+        "periode": "2022 – 2024",
+        "lokasi": "Bekasi, Indonesia",
+        "icon": "badminton",
+        "logo": "assets/images/organisasi/soedirman.webp",
+        "deskripsi": "Membangun kedisiplinan dan sportivitas melalui rutinitas latihan fisik dan kompetisi bulutangkis.",
+        "deskripsi_en": "Built discipline and sportsmanship through regular training and badminton competitions."
+      }
+    ]
+  },
+  "skill": [
+    {
+      "id": "frontend",
+      "kategori": "FrontEnd",
+      "icon": "frontend",
+      "deskripsi": "Antarmuka web yang cepat, responsif, dan penuh animasi.",
+      "deskripsi_en": "Fast, responsive, richly animated web interfaces.",
+      "items": [
+        {
+          "nama": "React",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+        },
+        {
+          "nama": "Next.js",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+          "mono": true
+        },
+        {
+          "nama": "TypeScript",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+        },
+        {
+          "nama": "Tailwind CSS",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+        },
+        {
+          "nama": "Framer Motion",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original.svg",
+          "mono": true,
+          "catatan": "dipakai di website ini",
+          "catatan_en": "used on this website"
+        },
+        {
+          "nama": "JavaScript",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+        },
+        {
+          "nama": "HTML5",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+        },
+        {
+          "nama": "CSS3",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "kategori": "BackEnd & Tools",
+      "icon": "backend",
+      "deskripsi": "API, database, dan alur deploy dari lokal ke produksi.",
+      "deskripsi_en": "APIs, databases, and deployment from local to production.",
+      "items": [
+        {
+          "nama": "Node.js",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+        },
+        {
+          "nama": "Supabase",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg"
+        },
+        {
+          "nama": "PostgreSQL",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+        },
+        {
+          "nama": "Git",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+        },
+        {
+          "nama": "Vercel",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg",
+          "mono": true
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "kategori": "Design",
+      "icon": "design",
+      "deskripsi": "Wireframe, prototipe, dan aset visual.",
+      "deskripsi_en": "Wireframes, prototypes, and visual assets.",
+      "items": [
+        {
+          "nama": "Figma",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+        },
+        {
+          "nama": "Canva",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg"
+        }
+      ]
+    },
+    {
+      "id": "language",
+      "kategori": "Programming Languages",
+      "icon": "language",
+      "deskripsi": "Algoritma, tipe yang aman, query data, paradigma fungsional, dan logika.",
+      "deskripsi_en": "Algorithms, type safety, data queries, functional paradigms, and logic.",
+      "items": [
+        {
+          "nama": "Python",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+        },
+        {
+          "nama": "TypeScript",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+        },
+        {
+          "nama": "SQL",
+          "logo": "assets/icons/sql.svg"
+        },
+        {
+          "nama": "C",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"
+        },
+        {
+          "nama": "C++",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+        },
+        {
+          "nama": "Java",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+        },
+        {
+          "nama": "Haskell",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/haskell/haskell-original.svg"
+        },
+        {
+          "nama": "Prolog",
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prolog/prolog-original.svg"
+        }
+      ]
+    }
+  ],
+  "proyek": [
+    {
+      "judul": "Portfolio Interaktif — Meniscus",
+      "judul_en": "Interactive Portfolio — Meniscus",
+      "deskripsi": "Website portfolio multi-halaman ini: dock navigasi Meniscus berbasis fisika pegas yang bisa diseret, animasi dan efek scroll dengan Motion (Framer Motion), dua bahasa (ID/EN), mode tampilan mengikuti perangkat, form kontak yang langsung masuk inbox, serta arsitektur berlapis data → service → UI → halaman.",
+      "deskripsi_en": "This multi-page portfolio site: a draggable, spring-physics Meniscus navigation dock, animations and scroll effects with Motion (Framer Motion), two languages (ID/EN), a display mode that follows the device, a contact form delivered straight to my inbox, and a layered data → service → UI → page architecture.",
+      "tools": [
+        "TypeScript",
+        "JavaScript",
+        "Motion (Framer Motion)",
+        "CSS",
+        "i18n",
+        "Accessibility"
+      ],
+      "tanggal": "2026"
+    },
+    {
+      "judul": "Automated LinkedIn 'Zip' Puzzle Solver",
+      "deskripsi": "Implementasi algoritma State-Space Tree dan Backtracking untuk menyelesaikan permainan puzzle 'Zip' LinkedIn secara otomatis dan efisien.",
+      "deskripsi_en": "An implementation of State-Space Tree and Backtracking algorithms that solves LinkedIn's 'Zip' puzzle automatically and efficiently.",
+      "tools": [
+        "Python",
+        "Algorithms",
+        "Graph Theory",
+        "Backtracking"
+      ],
+      "link_github": "https://github.com/mobyy17/Makalah-Matematika-Diskrit",
+      "tanggal": "2026"
+    }
+  ],
+  "musik": {
+    "status": "ongoing",
+    "catatan": "Halaman ini masih dalam pengembangan dan uji coba. Isi genre, artis, lagu, dan playlist di data/portfolio.json → musik.",
+    "catatan_en": "This page is still under development and testing. Fill in genres, artists, songs, and the playlist in data/portfolio.json → musik.",
+    "spotify_embed": "",
+    "genre": [],
+    "artis": [],
+    "lagu": []
+  }
+}

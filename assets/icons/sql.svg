@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4fa3e0"/><stop offset="1" stop-color="#2765a8"/></linearGradient></defs>
+  <path d="M20 26c0-9 20-16 44-16s44 7 44 16v76c0 9-20 16-44 16s-44-7-44-16z" fill="url(#g)"/>
+  <ellipse cx="64" cy="26" rx="44" ry="16" fill="#8cc8f2"/>
+  <path d="M20 52c0 9 20 16 44 16s44-7 44-16M20 78c0 9 20 16 44 16s44-7 44-16" fill="none" stroke="#1d4f86" stroke-width="4"/>
+  <text x="64" y="76" text-anchor="middle" font-family="Consolas, monospace" font-weight="700" font-size="26" fill="#fff">SQL</text>
+</svg>
