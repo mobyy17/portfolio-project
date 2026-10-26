@@ -1,0 +1,88 @@
+/* ==========================================================
+   EFFECTS — efek scroll & ornamen tema Bizarre's
+   ========================================================== */
+
+/* ---------- efek scroll ---------- */
+.page { position: relative; overflow-x: clip; }
+.page-head, .hero-intro { position: relative; }
+.scroll-word {
+  position: absolute;
+  top: 10px; left: 0;
+  z-index: -1;
+  font-size: clamp(6rem, 22vw, 17rem);
+  font-weight: 800;
+  letter-spacing: -.05em;
+  line-height: 1;
+  white-space: nowrap;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--line-strong);
+  pointer-events: none;
+  user-select: none;
+}
+.section-label { position: relative; padding-bottom: 10px; }
+.section-label::after {
+  content: "";
+  position: absolute; left: 0; bottom: 0;
+  width: min(100%, 220px); height: 2px; border-radius: 2px;
+  background: linear-gradient(90deg, var(--acc), transparent);
+  transform-origin: 0 50%;
+  transform: scaleX(var(--line-p, 1));
+}
+
+/* ---------- Bizarre's: aura ゴゴゴ ---------- */
+.menacing {
+  position: absolute;
+  right: 0; top: -10px;
+  width: 170px; height: 150px;
+  pointer-events: none;
+  opacity: var(--menacing-opacity);
+  transition: opacity .5s ease;
+  z-index: -1;
+}
+.menacing.is-tense { opacity: calc(var(--menacing-opacity) * 3); }
+.menacing span {
+  position: absolute;
+  left: calc(var(--i) * 36px);
+  top: calc(var(--i) * 22px);
+  font-family: var(--font-jp);
+  font-size: 3.4rem;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--gold-ink);
+  text-shadow: 3px 3px 0 color-mix(in srgb, #7b4fd6 70%, transparent);
+  font-style: italic;
+}
+.js .menacing span { opacity: 0; }
+@media (max-width: 880px) {
+  .menacing { width: 110px; height: 100px; top: -40px; }
+  .menacing span { font-size: 2.2rem; left: calc(var(--i) * 24px); top: calc(var(--i) * 14px); }
+}
+
+/* ---------- Bizarre's: To Be Continued ---------- */
+.tbc {
+  display: flex; align-items: center; gap: 12px;
+  width: fit-content;
+  margin: 0 auto 18px;
+  text-decoration: none;
+  color: var(--muted);
+}
+.tbc__arrow {
+  display: inline-flex; align-items: center;
+  min-height: 44px;
+  padding: 8px 18px 8px 30px;
+  background: color-mix(in srgb, var(--gold) 16%, transparent);
+  border: 0;
+  clip-path: polygon(20px 0, 100% 0, 100% 100%, 20px 100%, 0 50%);
+  transition: background-color .3s ease;
+}
+.tbc__text {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic; font-weight: 700;
+  font-size: .95rem;
+  letter-spacing: .01em;
+  color: var(--gold-ink);
+}
+.tbc__next { font-size: .85rem; font-weight: 600; }
+.tbc__next::before { content: "→ "; }
+.tbc:hover .tbc__arrow { background: color-mix(in srgb, var(--gold) 30%, transparent); }
+.tbc:hover .tbc__next { color: var(--ink); }
