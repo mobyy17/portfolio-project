@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Skill · Muhammad Rafiif Ansyadya</title>
+  <meta name="description" content="Keahlian frontend, backend, desain, dan bahasa pemrograman Muhammad Rafiif Ansyadya." />
+  <meta name="theme-color" content="#0f0c16" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg" />
+  <link rel="apple-touch-icon" href="assets/icons/logo.svg" />
+  <script>
+    // tema sebelum render (tanpa kedip) + penanda JS + animasi dock hanya di kunjungan pertama
+    (function () {
+      // mode: tersimpan "light"/"dark", selain itu "auto" = ikuti setting perangkat
+      var d = document.documentElement, t = null;
+      try { t = localStorage.getItem("tema"); } catch (e) {}
+      var pref = t === "light" || t === "dark" ? t : "auto";
+      d.setAttribute("data-theme-pref", pref);
+      d.setAttribute("data-theme", pref !== "auto" ? pref : (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
+      var lang = null;
+      try { lang = localStorage.getItem("lang"); } catch (e) {}
+      if (lang !== "id" && lang !== "en") lang = "id"; // default Indonesia; English hanya bila dipilih
+      d.lang = lang;
+      d.classList.add("js");
+      try { if (!sessionStorage.getItem("visited")) { d.classList.add("first-visit"); sessionStorage.setItem("visited", "1"); } } catch (e) {}
+      // pengaman: kalau modul JS gagal jalan, tampilkan konten tanpa animasi
+      setTimeout(function () { if (!d.classList.contains("ready")) d.classList.remove("js"); }, 2500);
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/tokens.css?v=202610261104" />
+  <link rel="stylesheet" href="assets/css/base.css?v=202610261104" />
+  <link rel="stylesheet" href="assets/css/components.css?v=202610261104" />
+  <link rel="stylesheet" href="assets/css/dock.css?v=202610261104" />
+  <link rel="stylesheet" href="assets/css/hire.css?v=202610261104" />
+  <link rel="stylesheet" href="assets/css/effects.css?v=202610261104" />
+
+  <!-- Motion (Framer Motion versi DOM) untuk animasi & efek scroll -->
+  <script type="importmap">
+    { "imports": { "motion": "https://cdn.jsdelivr.net/npm/motion@12.23.12/+esm" } }
+  </script>
+  <link rel="modulepreload" href="assets/js/main.js?v=202610261104" />
+  <script type="speculationrules">
+    { "prefetch": [{ "where": { "href_matches": "/*.html" }, "eagerness": "moderate" }] }
+  </script>
+</head>
+<body data-page="skill">
+  <a class="skip-link" href="#main" data-i18n="skip">Lewati ke konten</a>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="glow" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="index.html" aria-label="Rafiif — kembali ke Biodata" data-i18n-aria="brand.aria">
+        <img class="brand__logo" src="assets/icons/logo.svg" alt="" width="34" height="34" />
+        <span class="brand__text">Rafiif<span class="brand__dim">.portfolio</span></span>
+      </a>
+      <div class="topbar__right">
+        <div class="lang" role="group" aria-label="Bahasa">
+          <span class="lang__pill" aria-hidden="true"></span>
+          <button type="button" data-lang="id" lang="id">ID</button>
+          <button type="button" data-lang="en" lang="en">EN</button>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Ganti mode tampilan">
+          <svg class="icon-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4M12 7.5v6a3 3 0 0 0 0-6z" fill="currentColor"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="page">
+    <header class="page-head">
+      <span class="eyebrow" data-reveal>04 — <span data-i18n="head.skill.eyebrow">Keahlian</span></span>
+      <h1 class="page-title" data-split data-i18n="head.skill.title">Skill</h1>
+      <p class="page-lead" data-reveal style="--d:350" data-i18n="head.skill.lead">Teknologi yang saya pakai untuk membangun produk: dari antarmuka, server & database, sampai desain. Geser pita logo di bawah.</p>
+    </header>
+    <div id="content"><p class="notice" data-i18n="loading">Memuat…</p></div>
+  </main>
+
+  <footer class="foot">
+    &copy; <span id="tahun">2026</span> Muhammad Rafiif Ansyadya.
+  </footer>
+
+  <nav class="dock-wrap" aria-label="Navigasi halaman" data-i18n-aria="nav.aria">
+    <div data-meniscus></div>
+  </nav>
+
+  <script src="assets/js/dock/routes.js?v=202610261104"></script>
+  <script src="assets/js/dock/meniscus.js?v=202610261104"></script>
+  <script type="module" src="assets/js/main.js?v=202610261104"></script>
+</body>
+</html>
