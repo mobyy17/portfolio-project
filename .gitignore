@@ -1,0 +1,14 @@
+# dependency
+node_modules/
+
+# hanya untuk pengembangan lokal (tidak ikut repo)
+ui-untuk-berpindah/
+tools/
+_arsip-lama/
+_aset-asli/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.log

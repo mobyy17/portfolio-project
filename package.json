@@ -1,0 +1,17 @@
+{
+  "name": "rafiif-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio Muhammad Rafiif Ansyadya — HTML, CSS, JavaScript + TypeScript, animasi dengan Motion (Framer Motion).",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "serve": "npx --yes serve@14.2.4 -l 8000 ."
+  },
+  "devDependencies": {
+    "motion": "12.23.12",
+    "typescript": "5.9.3"
+  }
+}

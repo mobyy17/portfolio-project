@@ -1,0 +1,18 @@
+{
+  // Sumber TypeScript ada di src/ts, hasil kompilasi masuk ke assets/js (ikut di-commit,
+  // jadi website tetap jalan tanpa build). Jalankan `npm run build` setelah mengubah file .ts.
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ES2022",
+    "moduleResolution": "bundler",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "rootDir": "src/ts",
+    "outDir": "assets/js",
+    "strict": true,
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
+    "removeComments": false,
+    "newLine": "lf"
+  },
+  "include": ["src/ts/**/*.ts"]
+}
