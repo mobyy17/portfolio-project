@@ -1,0 +1,164 @@
+/* ==========================================================
+   HIRE ME — tombol, dialog form kontak, notifikasi terkirim
+   ========================================================== */
+
+/* ---------- tombol Hire me? ---------- */
+.btn--hire { border-color: color-mix(in srgb, var(--gold) 55%, transparent); }
+.btn--hire:hover { border-color: var(--gold-ink); }
+.hire-dot {
+  position: relative;
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--gold);
+}
+.hire-dot::after {
+  content: ""; position: absolute; inset: 0; border-radius: 50%;
+  background: var(--gold);
+  animation: ping 2.2s var(--ease-out) infinite;
+}
+
+/* ---------- dialog Hire me? ---------- */
+dialog.hire {
+  position: fixed; inset: 0;
+  width: 100%; height: 100%;
+  max-width: none; max-height: none;
+  margin: 0; padding: 16px;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  display: none;
+  place-items: center;
+  overflow-y: auto;
+}
+dialog.hire[open] { display: grid; }
+dialog.hire::backdrop { background: transparent; }
+.hire__scrim {
+  position: fixed; inset: 0;
+  background: rgba(10, 7, 16, .55);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.hire__panel {
+  position: relative;
+  width: min(100%, 520px);
+  padding: 32px 28px 24px;
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  box-shadow: var(--shadow), 0 0 0 1px color-mix(in srgb, var(--gold) 12%, transparent);
+  display: grid; gap: 14px;
+}
+.hire__close {
+  position: absolute; top: 14px; right: 14px;
+  width: 44px; height: 44px;
+  border-radius: 50%; border: 0;
+  background: var(--surface-2);
+  color: var(--ink-soft);
+  display: grid; place-items: center;
+  cursor: pointer;
+  transition: transform .4s var(--ease-spring), color .2s ease;
+}
+.hire__close:hover { transform: rotate(90deg); color: var(--ink); }
+.hire__eyebrow { font-family: var(--font-mono); font-size: .8rem; color: var(--gold-ink); letter-spacing: .08em; text-transform: uppercase; }
+.hire__title { font-size: clamp(1.7rem, 5vw, 2.2rem); font-weight: 800; letter-spacing: -.035em; margin-top: -6px; }
+.hire__lead { color: var(--muted); font-size: .95rem; margin-bottom: 4px; }
+
+.field { display: grid; gap: 6px; }
+.field label { font-weight: 600; font-size: .9rem; }
+.field input, .field textarea {
+  width: 100%;
+  min-height: 46px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--line-strong);
+  background: var(--surface-2);
+  color: var(--ink);
+  font: inherit; font-size: 16px; /* 16px: iOS tidak auto-zoom */
+  transition: border-color .2s ease, box-shadow .2s ease, background-color .2s ease;
+}
+.field textarea { resize: vertical; min-height: 120px; line-height: 1.5; }
+.field input::placeholder, .field textarea::placeholder { color: color-mix(in srgb, var(--muted) 75%, transparent); }
+.field input:focus, .field textarea:focus {
+  outline: none;
+  border-color: var(--acc-ink);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--acc) 22%, transparent);
+  background: var(--surface);
+}
+.field.is-invalid input, .field.is-invalid textarea { border-color: #f05a6e; box-shadow: 0 0 0 4px rgba(240, 90, 110, .15); }
+.field__err { min-height: 0; font-size: .82rem; color: #f05a6e; font-weight: 500; }
+.field__err:empty { display: none; }
+.field__count { justify-self: end; font-family: var(--font-mono); font-size: .72rem; color: var(--muted); }
+.hire__trap { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+
+.hire__status { font-size: .88rem; padding: 10px 12px; border-radius: 10px; }
+.hire__status:empty { display: none; }
+.hire__status[data-tone="warn"] { background: color-mix(in srgb, var(--gold) 14%, transparent); color: var(--ink); border: 1px solid color-mix(in srgb, var(--gold) 40%, transparent); }
+.hire__status[data-tone="error"] { background: rgba(240, 90, 110, .12); color: var(--ink); border: 1px solid rgba(240, 90, 110, .35); }
+
+.hire__actions { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-top: 4px; }
+.hire__submit { position: relative; min-width: 170px; }
+.hire__submit:disabled { cursor: progress; opacity: .85; }
+.hire__note { font-size: .82rem; color: var(--muted); overflow-wrap: anywhere; }
+.spinner {
+  display: none;
+  width: 16px; height: 16px; border-radius: 50%;
+  border: 2px solid currentColor; border-right-color: transparent;
+  animation: spin .7s linear infinite;
+}
+.hire__submit.is-busy .spinner { display: inline-block; }
+.hire__submit.is-busy svg { display: none; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ---------- notifikasi "Pesanmu sudah terkirim!" ---------- */
+.sent {
+  position: fixed;
+  left: 50%; top: 18px;
+  translate: -50% 0;
+  z-index: 400;
+  width: min(calc(100% - 32px), 440px);
+  display: flex; align-items: center; gap: 16px;
+  padding: 16px 52px 18px 16px;
+  border-radius: 20px;
+  background: var(--surface);
+  border: 1px solid color-mix(in srgb, var(--acc) 45%, var(--line-strong));
+  box-shadow: var(--shadow), 0 0 40px color-mix(in srgb, var(--acc) 25%, transparent);
+  overflow: hidden;
+}
+.sent__badge {
+  position: relative; z-index: 1;
+  flex-shrink: 0;
+  width: 52px; height: 52px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: var(--acc); color: var(--on-acc);
+  box-shadow: 0 0 0 6px color-mix(in srgb, var(--acc) 20%, transparent);
+}
+.sent__check { stroke-dasharray: 24; stroke-dashoffset: 0; }
+.sent__burst { position: absolute; left: 42px; top: 50%; width: 0; height: 0; pointer-events: none; }
+.sent__burst i {
+  position: absolute; left: -4px; top: -4px;
+  width: 8px; height: 8px; border-radius: 2px;
+  background: var(--acc);
+  opacity: 0;
+}
+.sent__burst i:nth-child(3n) { background: var(--gold); border-radius: 50%; }
+.sent__burst i:nth-child(4n) { background: #ff4f7b; }
+.sent__text { display: grid; gap: 2px; min-width: 0; }
+.sent__title { font-size: 1.12rem; font-weight: 800; letter-spacing: -.02em; }
+.sent__title span { display: inline-block; }
+.sent__sub { color: var(--muted); font-size: .88rem; }
+.sent__close {
+  position: absolute; top: 8px; right: 8px;
+  width: 40px; height: 40px; border: 0; border-radius: 50%;
+  background: transparent; color: var(--muted);
+  display: grid; place-items: center; cursor: pointer;
+}
+.sent__close:hover { color: var(--ink); background: var(--surface-2); }
+.sent__bar {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--acc), var(--gold));
+  transform-origin: 0 50%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hire-dot::after, .spinner { animation: none; }
+}
